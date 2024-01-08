@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bbb4b4;
+    overscroll-behavior: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    margin: 0px;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Dice Styles */
+#dice {
+    width: 700px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+}
+
+#dice img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 12px;
+}
+
+/* Graph Styles */
+#graph {
+    width: 700px;
+    height: auto;
+    margin: auto;
+    padding: 10px 10px 0px 10px;
+    margin: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+}
+
+#graph div {
+    height: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    transition: width 0.5s;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Bar Styles */
+#bar2, #bar3, #bar4, #bar5, #bar6, #bar7, #bar8, #bar9, #bar10, #bar11, #bar12 {
+    background-color: #007bff95;
+    width: 0%;
+    position: relative;
+}
+
+#bar2:hover, #bar3:hover, #bar4:hover, #bar5:hover, #bar6:hover, #bar7:hover, #bar8:hover, #bar9:hover, #bar10:hover, #bar11:hover, #bar12:hover {
+    background-color: #0052a9b4;
+    transition: 0.4s;
+}
+
+.bar-number {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    position: relative;
+}
+
+/* Button Styles */
+button {
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    margin: 0%;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #6c757d;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #585c60;
+    transition-duration: 0.4s;
+}
+
+/* Input Styles */
+input {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* Container Styles */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+.button-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+    width: 100%;
+    max-width: 720px;
+}
+
+/* X Axis Styles */
+#xAxis {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid black;
+}
+
+#xAxis div {
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin: 0px;
+}
+
+#xAxis span {
+    position: absolute;
+    bottom: 0;
+}
